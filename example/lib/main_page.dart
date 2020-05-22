@@ -11,7 +11,10 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomVideoPlayer(),
+      body:Container(
+        color:Colors.white,
+        child:CustomVideoPlayer()
+      )
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:video_player/video_player.dart';
 
 class CustomVideoPlayer extends StatefulWidget{
   @override
@@ -8,6 +9,12 @@ class CustomVideoPlayer extends StatefulWidget{
 
 class CustomVideoPlayerState extends State<CustomVideoPlayer>{
 
+  VideoPlayerController _playerController;
+  @override
+  initState(){
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,7 +22,7 @@ class CustomVideoPlayerState extends State<CustomVideoPlayer>{
       color: Colors.black, 
       child:Stack(
         children: <Widget>[
-
+          VideoPlayer(_playerController)
         ],
       )
     );
