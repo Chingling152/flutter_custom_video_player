@@ -1,7 +1,23 @@
-library custom_video_player;
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+class CustomVideoPlayer extends StatefulWidget{
+  @override
+  State<StatefulWidget> createState() => CustomVideoPlayerState();
+}
+
+class CustomVideoPlayerState extends State<CustomVideoPlayer>{
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 10,vertical: 20),
+      color: Colors.black, 
+      child:Stack(
+        children: <Widget>[
+
+        ],
+      )
+    );
+  }
 }
