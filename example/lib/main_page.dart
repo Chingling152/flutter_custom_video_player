@@ -1,5 +1,5 @@
 import 'package:custom_video_player/custom_video_player.dart';
-import 'package:custom_video_player/video_player_type.dart';
+import 'package:custom_video_player/video_player_enums.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -33,7 +33,7 @@ class MainPageState extends State<MainPage> {
                     child:Text("Title")
                   ),
                   Container(
-                    child:CustomVideoPlayer(path:path,type: type,autoPlay: true)
+                    child:CustomVideoPlayer(path:path,type: type,autoPlay: false)
                   )
                 ],
               )

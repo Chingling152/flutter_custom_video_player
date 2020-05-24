@@ -6,8 +6,8 @@ W.I.P.
 ## Main Objectives
 
 ### 0.1.x
-- [ ] Default Video Player  
 - [ ] PlayerController manipulation  
+- [ ] Default Video Player  
 
 ### 0.2.x
 - [ ] UI manipulation  
